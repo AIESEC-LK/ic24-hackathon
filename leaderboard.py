@@ -133,17 +133,17 @@ def main():
     st.set_page_config(
     layout="centered",
     ## You can change the page title here
-    page_title="AP Hackathon - Dashboard",
+    page_title="IC Hackathon - Dashboard",
     page_icon= icon_path,
     )   
 
     ## The Dashboard Title (You can change here)
-    st.title("AP Hackathon - Dashboard")
+    st.title("IC 2024 Hackathon - Dashboard")
 
     st_autorefresh(interval=5 * 60 * 1000, key="data_refresh")  # Set interval to 5 minutes
     # URL to your Google Sheets data
     ## Datasource url / Google Sheets CSV
-    sheet_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRQ0DK7DqYpQQwLsb93-fbhDN1NhHLO9P7GNhyceIwWdj5EOFInWSflTbvDYrakkuEJlDHgDV25kP9w/pub?gid=1562137798&single=true&output=csv"
+    sheet_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSWeWz8CNgo9G19InZIBMfNv_JIJ2NT-biNPJJGbGhhgf1vYm2VzrwMGgXpCgcQdHscJJAzuJ4ZVlPs/pub?gid=1562137798&single=true&output=csv"
 
     # Load data using the cached function
     data = load_data(sheet_url)
